@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=New Rocker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bonbon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Princess Sofia" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yatra One" rel="stylesheet">
+
+  <title>SafetySense - Guardians</title>
+  <meta name="description" content="Guardian emergency alert page for SafetySense women safety web application">
+  <meta name="keywords" content="women safety, emergency alert, guardian alert, safety app">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css" title="style">
+</head>
+
+<?php include 'includes/call1.php'; ?>
+<?php include 'includes/call2.php'; ?>
+<?php include 'includes/call3.php'; ?>
+
+<script type="text/javascript">
+  function clearAllFields1() {
+    document.getElementById("number1").value = "";
+    document.getElementById("textMessage1").value = "";
+  }
+
+  function clearAllFields2() {
+    document.getElementById("number2").value = "";
+    document.getElementById("textMessage2").value = "";
+  }
+
+  function clearAllFields3() {
+    document.getElementById("number3").value = "";
+    document.getElementById("textMessage3").value = "";
+  }
+
+  function change1() {
+    document.getElementById("number1").value = "9876543210";
+  }
+
+  function change2() {
+    document.getElementById("number1").value = "9876543211";
+  }
+
+  function change3() {
+    document.getElementById("number1").value = "9876543212";
+  }
+
+  function change4() {
+    document.getElementById("number1").value = "9876543213";
+  }
+
+  function change5() {
+    document.getElementById("number1").value = "9876543214";
+  }
+
+  function change6() {
+    document.getElementById("number1").value = "9876543215";
+  }
+
+  function change7() {
+    document.getElementById("number1").value = "9876543216";
+  }
+
+  function change8() {
+    document.getElementById("number1").value = "9876543217";
+  }
+</script>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1>
+            <a href="#">
+              <span class="logo_colour">SafetySense &nbsp;</span>
+              <span class="logo_colour2">Making Sure Your Safety</span>
+            </a>
+          </h1>
+          <h2>Stay Safe. Your safety is our priority.</h2>
+        </div>
+      </div>
+
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Welcome Page</a></li>
+          <li><a href="page_one.html">Navigation</a></li>
+          <li><a href="page_two.html">Safe Zone</a></li>
+          <li class="selected"><a href="page_three.html">Guardians</a></li>
+          <li><a href="page_four.html">Safety Alarm</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="site_content">
+      <div class="sidebar">
+        <h3>Emergency Contacts</h3>
+        <p>Click on a contact name to select their number.</p>
+
+        <h4 onclick="change6()">Guardian 1</h4>
+        <p>Active</p>
+
+        <h4 onclick="change7()">Guardian 2</h4>
+        <p>Active</p>
+
+        <h4 onclick="change8()">Guardian 3</h4>
+        <p>Silent</p>
+
+        <h4 onclick="change1()">Friend 1</h4>
+        <p>Active</p>
+
+        <h4 onclick="change2()">Friend 2</h4>
+        <p>Silent</p>
+
+        <h4 onclick="change3()">Friend 3</h4>
+        <p>Active</p>
+
+        <h4 onclick="change4()">Friend 4</h4>
+        <p>Silent</p>
+
+        <h4 onclick="change5()">Friend 5</h4>
+        <p>Vibration</p>
+      </div>
+
+      <div id="content1">
+        <br><br>
+
+        <button type="button" name="callsafety" class="btn btn-outline-primary mt-3" id="btncall">
+          Call 1901
+        </button>
+
+        <div class="container mt-3">
+          <form method="POST" action="#">
+            <br>
+            <label for="number1">Mobile Number 1</label>
+            <br>
+            <input
+              type="tel"
+              name="userMobile1"
+              class="form-control"
+              id="number1"
+              value="9876543210"
+              placeholder="9876543210"
+              required
+              pattern="[789][0-9]{9}"
+            >
+
+            <br>
+            <label for="textMessage1">Message</label>
+            <br>
+            <textarea
+              class="form-control"
+              name="userMessage1"
+              required
+              id="textMessage1"
+              rows="3"
+              placeholder="Please save me. I am in danger."
+              maxlength="158"
+            >Please save me. I am in danger.</textarea>
+
+            <br>
+            <button type="submit" name="SubmitButton1" class="btn btn-outline-primary mt-3" id="btnSend1">
+              Send
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-secondary mt-3 ml-3" onclick="clearAllFields1()">
+              Clear
+            </button>
+          </form>
+        </div>
+
+        <div class="container mt-3">
+          <form method="POST" action="#">
+            <br>
+            <label for="number2">Mobile Number 2</label>
+            <br>
+            <input
+              type="tel"
+              name="userMobile2"
+              class="form-control"
+              id="number2"
+              value="9876543211"
+              placeholder="9876543211"
+              required
+              pattern="[789][0-9]{9}"
+            >
+
+            <br>
+            <label for="textMessage2">Message</label>
+            <br>
+            <textarea
+              class="form-control"
+              name="userMessage2"
+              required
+              id="textMessage2"
+              rows="3"
+              placeholder="Please save me. I am in danger."
+              maxlength="158"
+            >Please save me. I am in danger.</textarea>
+
+            <br>
+            <button type="submit" name="SubmitButton2" class="btn btn-outline-primary mt-3" id="btnSend2">
+              Send
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-secondary mt-3 ml-3" onclick="clearAllFields2()">
+              Clear
+            </button>
+          </form>
+        </div>
+
+        <div class="container mt-3">
+          <form method="POST" action="#">
+            <br>
+            <label for="number3">Mobile Number 3</label>
+            <br>
+            <input
+              type="tel"
+              name="userMobile3"
+              class="form-control"
+              id="number3"
+              value="9876543212"
+              placeholder="9876543212"
+              required
+              pattern="[789][0-9]{9}"
+            >
+
+            <br>
+            <label for="textMessage3">Message</label>
+            <br>
+            <textarea
+              class="form-control"
+              name="userMessage3"
+              required
+              id="textMessage3"
+              rows="3"
+              placeholder="Please save me. I am in danger."
+              maxlength="158"
+            >Please save me. I am in danger.</textarea>
+
+            <br>
+            <button type="submit" name="SubmitButton3" class="btn btn-outline-primary mt-3" id="btnSend3">
+              Send
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-secondary mt-3 ml-3" onclick="clearAllFields3()">
+              Clear
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      Developed by Kavya Rani
+    </div>
+  </div>
+</body>
+</html>

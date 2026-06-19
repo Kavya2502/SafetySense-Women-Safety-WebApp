@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=New Rocker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yatra One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bonbon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Princess Sofia" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amarante" rel="stylesheet">
+
+  <title>SafetySense - Safety Alarm</title>
+  <meta name="description" content="Safety alarm page for SafetySense women safety web application">
+  <meta name="keywords" content="women safety, safety alarm, SOS alarm, emergency alert">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css" title="style">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1>
+            <a href="#">
+              <span class="logo_colour">SafetySense &nbsp;</span>
+              <span class="logo_colour2">Making Sure Your Safety</span>
+            </a>
+          </h1>
+          <h2>Stay Safe. Your safety is our priority.</h2>
+        </div>
+      </div>
+
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Welcome Page</a></li>
+          <li><a href="page_one.html">Navigation</a></li>
+          <li><a href="page_two.html">Safe Zone</a></li>
+          <li><a href="page_three.html">Guardians</a></li>
+          <li class="selected"><a href="page_four.html">Safety Alarm</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+
+      function pause() {
+        var audio = document.getElementById("audio");
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    </script>
+
+    <audio id="audio" src="images/siren.mp3"></audio>
+
+    <div id="site_content">
+      <div class="zoomimage">
+        <img
+          src="images/sos.jpeg"
+          onclick="play()"
+          alt="SOS Alarm"
+          style="margin:20px; max-width:47%; max-height:47%; cursor:pointer;"
+        >
+
+        <img
+          src="images/stop.png"
+          onclick="pause()"
+          alt="Stop Alarm"
+          style="margin:20px; max-width:47%; max-height:47%; cursor:pointer;"
+        >
+      </div>
+
+      <br>
+
+      <div id="content">
+        <h1 class="center">Keep Calm. Someone will hear you and come for help.</h1>
+      </div>
+    </div>
+
+    <div id="footer">
+      Developed by Kavya Rani
+    </div>
+  </div>
+</body>
+</html>
